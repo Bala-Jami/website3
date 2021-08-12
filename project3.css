@@ -1,0 +1,173 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(83, 83, 94, 0.9),rgba(74, 74, 87, 0.9)),url(images/hospital.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.logo img{
+    padding:10px;
+    margin:10px;
+    width:120px;
+    height:100px;
+}
+.menu{
+    display:flex;
+}
+nav{
+    width: 10%;
+    height:80vh;
+    background:linear-gradient(rgba(0,0,0.9,0.9),rgba(0,0,0.7,0.7))
+}
+.list li{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    list-style-type: none;
+    padding:1rem;
+    font-size: 22px;
+}
+.list a{
+    text-decoration: none;
+    color: #fff;
+}
+.list li::after{
+    content: '';
+    width:0%;
+    height:2px;
+    background: red;
+    margin:auto;
+    display: block;
+    transition: 1s;
+}
+.list li:hover::after{
+    width:100%
+}
+.header h1{
+    color:#fff;
+    position:absolute;
+    left:55%;
+    top:37%;
+    transform:translate(-37%,-55%);
+    font-size: 40px;
+    font-weight: 600;
+}
+.hero-button h2{
+    position: absolute;
+    top:45%;
+    left:55%;
+    transform: translate(-45%,-55%);
+    background: transparent;
+    border:1px solid wheat;
+    font-size: 24px;
+}
+.hero-button h2:hover{
+    border:1px solid red;
+    background: red;
+    transition: 2s;
+    color: white;
+}
+
+
+
+/*---------- Slot form and Hospitality ----------*/
+legend{
+    text-align: center;
+    font-size: 25px;
+    color:#fff
+}
+fieldset{
+    width:50%;
+    margin:auto;
+}
+div{
+    margin-top:1rem;
+    padding:1rem;
+    margin-bottom: 1rem;
+}
+label{
+    color:antiquewhite;
+    font-size: 20px;
+}
+input{
+    outline: none;
+}
+button{
+    font-size: 25px;
+    background: black;
+    margin-right: 1rem;
+}
+button a {
+    color: #fff;
+}
+button a:hover{
+    color:green
+}
+
+/*-------- Queries Section ----------*/
+
+.sub-header{
+    min-height: 60vh;
+    width: 100%;
+    background-image:url(images/one-hospital.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.sub-header h1{
+    color: indianred;
+    text-align: center;
+    font-size: 28px;
+}
+.form input{
+    width:90%;
+    height:40px;
+    border:none;
+    outline: none;
+    background:rgba(0, 1, 14, 0.349);
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding: 10px;
+}
+.form textarea{
+    width:90%;
+    height:80px;
+    border:none;
+    outline: none;
+    background:rgba(0, 1, 14, 0.349);
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding: 10px;
+}
+.form input, .form textarea{
+    box-sizing: border-box;
+}
+.button{
+    color:white;
+    width: 40%;
+    margin-left:400px
+}
+.button:hover{
+    background:green
+}
+
+/*-------- Know More Section --------------*/
+
+.about h1{
+    font-size:40px;
+    font-weight: 700;
+    color:honeydew;
+    text-align: center;
+    margin-top: 30px;
+}
+.row,.column{
+    display: flex;
+    width:40%;
+    text-align:justify;
+    flex-basis: 50%;
+}
+.know{
+    display: flex;
+}
